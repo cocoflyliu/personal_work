@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<head>
-<meta charset="utf-8">
-<script src="https://d3js.org/d3.v4.min.js"></script>
-</head>
-<style> /* set the CSS */
-.line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 2px;
-}
-</style>
-<body>
-<script>
+function test(){
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -64,6 +51,5 @@ d3.csv("./2330_1.csv", function(error, data) {
       .call(d3.axisLeft(y));
 
 });
+}
 
-</script>
-</body>
