@@ -16,7 +16,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
-d3.csv("./2330_1.csv", function(error, data) {
+d3.csv("https://cocoflyliu.github.io/personal_work/2330_1.csv", function(error, data) {
   if (error) throw error;
   var maxy = d3.max(data, function (d) {
                     return d.close; });
